@@ -1,3 +1,10 @@
-# practical_task_4_9
-This repository is created for Practical Task 4.9  
-**Part 1**  
+# Practical task 4.9
+Этот репозиторий создан для выполнения практического задания 4.9 в рамках курса Linux для роботехников.  
+При выполнении работы были использованы материалы книги [Pro Git](https://git-scm.com/book/ru/v2).  
+Основные этапы работы:  
+1. На платформе GitHub создан репозиторий practical_task_4_9
+2. Репозиторий клонирован на компьютер:  
+ git clone https://github.com/mvv-gthb/practical_task_4_9
+3. В рабочем каталоге создан файл _enigma.py_.
+4. В файле реализована функция _rotor_, реализующая работу ротора шифрования Энигмы.
+5. 
