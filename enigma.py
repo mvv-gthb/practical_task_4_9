@@ -22,3 +22,17 @@ def rotor(symbol, n, reverse=False):
                 crypted_symbol = RDICT[n][(RDICT[n].index(symbol) + step) % len(RDICT[n])]
     else: crypted_symbol = symbol
     return crypted_symbol
+
+reflector_dict = {
+    1 : ('AY', 'BR', 'CU', 'DH', 'EQ',
+         'FS', 'GL', 'IP', 'JX', 'KN',
+         'MO', 'TZ', 'VW')
+}
+def reflector(symbol, n):
+	if bool(n):
+		for item in reflector_dict[n]:
+			if symbol.capitalize() in item:
+				crypted_symbol = item.replace(symbol.capitalize(), '')
+		return crypted_symbol
+	else:
+		return symbol
