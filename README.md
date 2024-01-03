@@ -7,4 +7,8 @@
  git clone https://github.com/mvv-gthb/practical_task_4_9
 3. В рабочем каталоге создан файл _enigma.py_.
 4. В файле реализована функция _rotor_, реализующая работу ротора шифрования Энигмы.
-5. 
+5. При помощи команд  
+ git add enigma.py  
+ git add README.md  
+ включено отслеживание файлов.
+6.
