@@ -36,3 +36,23 @@ def reflector(symbol, n):
 		return crypted_symbol
 	else:
 		return symbol
+
+def enigma(text, ref, rot1, rot2, rot3):
+    rot_list = [rot3, rot2, rot1]
+    formatted_str = ''.join([item for item in text.upper() if item.isalnum()])
+    forward_crypted_str = ''
+    for symbol in formatted_str:
+        for rot in rot_list:
+            symbol = rotor(symbol, rot)
+        forward_crypted_str += symbol
+    reflected_crypted_str = ''
+    for symbol in forward_crypted_str:
+        reflected_crypted_str += reflector(symbol, ref)
+    back_crypted_str = ''
+    rot_list.reverse()
+    backward_crypted_str = ''
+    for symbol in reflected_crypted_str:
+        for rot in rot_list:
+            symbol = rotor(symbol, rot, True)
+        backward_crypted_str += symbol
+    return backward_crypted_str

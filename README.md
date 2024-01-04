@@ -17,4 +17,9 @@
  _git push_
 9. Далее commit'ы файла README.md указываться не будут.
 10. Добавление функции, реализующей отражатель Энигмы, затем commit и push изменений.
- 
+11. Создание новой ветки full_function
+ _git checkout -b full_function_
+12. Добавление функции, реализующей шифрование при помощи роторов и отражателя.
+13. commit и push, указанных изменений
+ _git commit -a -m "Добавление функции шифрования и обновление файла README.md"_
+ _git push --set-upstream origin full_function_
